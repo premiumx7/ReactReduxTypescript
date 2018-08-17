@@ -3,7 +3,7 @@ import {Actions} from "../actions/firstAction";
 import {FirstReducerStore} from "./FirstReducerStore";
 
 
-const reducer = (state:FirstReducerStore , action: Actions): FirstReducerStore => {
+export const reducer = (state:FirstReducerStore , action: Actions): FirstReducerStore => {
     switch(action.type){
         case ADD_TODO:
         return state;
