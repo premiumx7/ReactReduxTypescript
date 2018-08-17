@@ -1,6 +1,6 @@
-const ADD_TODO = 'ADD_TODO';
 
-type AddTodo ={type: typeof ADD_TODO, text:string};
+import {AddTodo, ADD_TODO} from '../types/firstType';
+
 
 function addTodo(text: string) : AddTodo {
     return {
