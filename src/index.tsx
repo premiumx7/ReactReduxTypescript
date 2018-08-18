@@ -7,7 +7,7 @@ import { Hello } from "./components/Hello";
 
 ReactDOM.render(
     <Provider store={store}>
-    <Hello compiler="TypeScript" framework="React Power" />
+    <Hello />
     </Provider>,
     document.getElementById("example")
 );

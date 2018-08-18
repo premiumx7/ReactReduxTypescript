@@ -1,5 +1,5 @@
 export interface FirstReducerStore{
-    todos : string[]
+    todos : string
 }
 
-export const FirstReducerStoreInit: FirstReducerStore = {todos:[]};
+export const FirstReducerStoreInit: FirstReducerStore = {todos:'5'};
