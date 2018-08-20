@@ -7,7 +7,7 @@ import { Hello } from "./components/Hello";
 
 ReactDOM.render(
     <Provider store={store}>
-    <Hello />
+    <Hello/>
     </Provider>,
     document.getElementById("example")
 );

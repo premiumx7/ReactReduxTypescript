@@ -7,10 +7,11 @@ import {addTodoWithDispatch, addTodo} from "../actions/firstAction";
 
 import {FirstReducerStoreInit} from '../reducers/FirstReducerStore';
 
-export const Hello = ({todos} : any) => <h1>Hello from h {todos}!</h1>;
+
+export const Hello = ({todos} : any) => <h1>Hello from {todos}{console.log(todos)}!</h1>;
 
 
-const mapStateToProps = (state: FirstReducerStore): FirstReducerStore => {
+const mapStateToProps = (state: any): any => {
     console.log('state');
     console.log(state);
 
