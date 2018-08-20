@@ -6,6 +6,8 @@ import { FirstReducerStore } from "../reducers/FirstReducerStore";
 import { addTodo } from "../actions/firstAction";
 
 import {FirstReducerStoreInit} from '../reducers/FirstReducerStore';
+import { Dispatch } from "redux";
+import { AddTodo } from "../types/firstType";
 
 type Props = { todos: string, janusz: string };
 
@@ -22,7 +24,7 @@ const mapStateToProps = (state: FirstReducerStore): Props => {
 
 }
 
-const mapDispatchToProps   = { addTodo };
+const mapDispatchToProps   =  (dispatch: Dispatch<AddTodo>) => ({ addTodo: (params: FirstReducerStore) => dispatch(addTodo(params)) });
 
 
 export default connect(mapStateToProps, mapDispatchToProps)(Hello);
