@@ -7,7 +7,9 @@ export const reducer = (state:FirstReducerStore , action: Actions): FirstReducer
     switch(action.type){
         case ADD_TODO:
         return {
-            ...state, todos: action.text
+            ...state, 
+                todos: action.text.todos,
+                janusz: action.text.janusz 
         };
         
         default:

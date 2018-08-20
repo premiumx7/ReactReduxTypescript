@@ -1,5 +1,6 @@
 export interface FirstReducerStore{
-    todos : string
+    todos : string,
+    janusz: string
 }
 
-export const FirstReducerStoreInit: FirstReducerStore = {todos:'5'};
+export const FirstReducerStoreInit: FirstReducerStore = {todos:'5', janusz:'mroczek'};
